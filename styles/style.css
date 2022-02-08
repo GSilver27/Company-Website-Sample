@@ -1,6 +1,118 @@
 /*------------- МЕДИА-ЗАПРОСЫ -------------*/
 
+@media screen and (max-width: 1520px) and (min-width: 1519px){
+    main div:first-of-type h1 {
+        font-size: 5.5rem;
+    }
+}
+@media screen and (max-width: 1402px) {
+    main div p:first-child {
+        font-size: 0.9rem;
+    }
+}
 
+@media screen and (max-width: 1340px) {
+
+    main div:first-of-type h1 {
+        font-size: 3.3rem;
+    }
+
+    footer .group-1,
+    footer .group-2 {
+        width: 250px;
+    }
+
+    footer .margin-left {
+        margin-left: 9rem;
+    }
+
+    footer div:nth-of-type(2) .margin-left {
+        margin-left: 9rem;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    main .main-img {
+        width: 24rem;
+    }
+
+    main .btn-red {
+        font-size: 0.9rem;
+    }
+
+    footer div .margin-left:nth-of-type(2) {
+        margin-left: 12rem;
+    }
+
+    footer div .width-container{
+        width: 15rem;
+    }
+
+    footer .width-container h3 {
+        font-size: 1.3rem;
+    }
+
+    footer div:nth-of-type(2) .margin-left {
+        margin-left: 11rem;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+
+    header nav img {
+        width: 14rem;
+    }
+    header nav:nth-of-type(1) {
+        font-size: 1.0rem;
+    }
+
+    header nav .font-size-tel {
+        font-size: 1.2rem;
+    }
+
+    header nav div:nth-of-type(3) p {
+        font-size: 0.8rem;
+    }
+
+    main div {
+        font-size: 0.9rem;
+    }
+
+    main  .main-img  {
+        width: 21rem;
+    }
+
+    footer div .width-container,
+    footer div p .width-container {
+        width: 10rem;
+    }
+
+    footer .width-container h3 {
+        font-size: 1.1rem;
+    }
+
+    footer div .group-1,
+    footer div .group-2 {
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+
+    footer div:nth-of-type(1) .margin-left {
+        margin-left: 5rem;
+    }
+
+    footer div:nth-child(2) div:nth-of-type(2) {
+        margin-left: 5rem;
+    }
+
+    footer div:nth-child(2) div:nth-of-type(3) {
+        font-size: 0.9rem;
+    }
+
+}
 
 /*------------- УНИВЕРСАЛЬНЫЕ СЕЛЕКТОРЫ -------------*/
 html {
@@ -20,12 +132,20 @@ body {
     width: 330px;
 }
 
+.width-container-small {
+    width: 240px;
+}
+
 .margin-top {
     margin-top: 6rem;
 }
 
-.margin-left-250 {
-    margin-left: 250px;
+.margin-left {
+    margin-left: 17rem;
+}
+
+main .font-size-bigger {
+    font-size: 1.3rem;
 }
 
 a:hover {
@@ -71,7 +191,6 @@ header div:nth-child(3) p span {
     font-size: 1.6rem;
 }
 
-
 /*------------- СТИЛИ МЕЙНА -------------*/
 .background-layer {
     position: absolute;
@@ -92,8 +211,9 @@ h1 {
     font-size: 4rem;
 }
 
+/* кодировка ломается - нужно снова сделать фоткой */
 main .arrow-before::before {
-    content: " \1F862";
+    content: "\1F862";
     margin-right: 0.5rem;
 }
 
