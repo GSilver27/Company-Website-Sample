@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Тестовое Задание</title>
+
+    <title>Пример работы</title>
 
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -29,7 +30,6 @@
                 </div>
 
                 <div>
-
                     <p class="d-inline-flex align-items-center">
                         <span class="">&#129122;</span><a href="#">Записаться на консультацию<br>
                         юриста</a>
@@ -41,32 +41,36 @@
 
         <div class="background-layer mt-5"></div>
 
-        <main class="mt-5">
+        <main class="mt-2">
 
-            <div class="width-center d-flex justify-content-between min-size color-white">
+             <div class="width-center d-flex justify-content-between align-items-center min-size color-white">
 
-                <div class="mr-5 pt-5 text-break">
-                    <p class="color-grey">Списание долгов на основании ФЗ№ 127 «О нестостоятельности (банкротстве)»</p>
-                    <h1 class="font-weight-bold">Спишем ваши долги</h1>
-                    <h3>Пройдите тест и получите:</h3>
-                    <p class="pt-3"><span class="arrow-before">Варианты списания вашего долга</span></p>
-                    <p><span class="arrow-before">Консультацию юриста по списанию долгов</span></p>
-                    <p><span class="arrow-before">Сроки и стоимость списания</span></p>
-                    <p><span class="arrow-before">Список необходимых документов <br><span class="pl-4"></span> для начала процедуры</span></p>
-                    <div class="d-inline-flex align-items-center">
-                        <a href="#" class="color-white btn btn-red mt-3 pt-3 pr-5 pb-3 pl-5">Получить варианты списания <span class="arrow-after">&#129122;</span></a>
-                    </div>
+                 <div class="mr-5 pt-5 text-break">
+                    <!-- <form id="regForm" action="#" method="post" enctype="text/plain"> -->
+                        <p class="color-grey">Списание долгов на основании ФЗ№ 127 «О нестостоятельности (банкротстве)»</p>
+                        <h1 class="font-weight-bold mb-2">Спишем ваши долги</h1>
+                        <h3>Пройдите тест и получите:</h3>
+                        <p class="font-size-bigger pt-3"><span class="arrow-before">Варианты списания вашего долга</span></p>
+                        <p class="font-size-bigger"><span class="arrow-before">Консультацию юриста по списанию долгов</span></p>
+                        <p class="font-size-bigger"><span class="arrow-before">Сроки и стоимость списания</span></p>
+                        <p class="font-size-bigger"><span class="arrow-before">Список необходимых документов <br><span class="pl-4"></span> для начала процедуры</span></p>
+                        <div class="d-inline-flex align-items-center">
+                            <button class="color-white btn btn-red mt-2 pt-3 pr-5 pb-3 pl-5" type="button" id="nextBtn" onclick="nextPrev(1)">
+                                Получить варианты списания <span class="arrow-after">&#129122;</span>
+                            </button>
+                        </div>
+                    <!-- </form>-->
                 </div>
 
                 <div>
-                    <img src="images/main.png" alt="">
+                    <img class="main-img" src="images/main.png" alt="">
                 </div>
 
             </div>
 
             <div class="width-center text-break d-flex justify-content-between pb-5 margin-top">
 
-                <div>
+                <div class="width-container-small mr-3">
                     <img class="mb-3" src="images/icon1.png" alt="">
                     <h5>Опытные юристы</h5>
                     <p class="mt-2">
@@ -74,7 +78,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="width-container-small mr-3">
                     <img class="mb-3" src="images/icon2.png" alt="">
                     <h5>Офис в центре Москвы</h5>
                     <p class="mt-2">
@@ -82,7 +86,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="width-container-small mr-3">
                     <img class="mb-3" src="images/icon3.png" alt="">
                     <h5>Гарантии в договоре</h5>
                     <p class="mt-2">
@@ -90,7 +94,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="width-container-small">
                     <img class="mb-3" src="images/icon4.png" alt="">
                     <h5>На более 570 миллиардов</h5>
                     <p class="mt-2">
@@ -116,17 +120,17 @@
 
                 </div>
 
-                <div class="margin-left-250">
+                <div class="margin-left">
                     <h4>Специализируемся на случаях:</h4>
 
                     <div class="d-flex justify-content-between mt-4">
-                        <div>
+                        <div class="group-1">
                             <p><span>Полное списание долгов</span></p>
                             <p><span>Частичное списание долгов</span></p>
                             <p><span>Реструктуризация долгов</span></p>
                         </div>
 
-                        <div class="ml-4">
+                        <div class="group-2 ml-4">
                             <p><span>Банкротство ИП</span></p>
                             <p><span>Списание долгов по распискам</span></p>
                             <p><span>Списание долгов по распискам</span></p>
@@ -144,20 +148,20 @@
                         При информационном содействии
                     </p>
                     <!-- грубая обёртка всех элементов одним тегом - для демонстрации кликабельности -->
-                    <a href="#">
-                        <img src="images/emblem1.png" class="mr-3" alt="">
-                        <img src="images/emblem2.png" class="mr-3" alt="">
-                        <img src="images/emblem3.png" class="mr-3" alt="">
-                        <img src="images/emblem4.png" alt="">
+                    <a class="d-flex justify-content-start flex-wrap width-container" href="#">
+                        <img src="images/emblem1.png" class="mr-3 pt-2" alt="">
+                        <img src="images/emblem2.png" class="mr-3 pt-2" alt="">
+                        <img src="images/emblem3.png" class="mr-3 pt-2" alt="">
+                        <img src="images/emblem4.png" class="mt-2" alt="">
                     </a>
                 </div>
 
-                <div class="margin-left-250 mr-4">
-                    <h5>
+                <div class="margin-left mr-4">
+                    <div class="font-weight-bold">
                         Больше о нас здесь
-                    </h5>
+                    </div>
                     <!-- грубая обёртка всех элементов одним тегом - для демонстрации кликабельности -->
-                    <a href="#">
+                    <a class="d-flex justify-content-start flex-wrap" href="#">
                         <img src="images/tg.png" class="mr-2" alt="">
                         <img src="images/vk.png" class="mr-2" alt="">
                         <img src="images/ok.png" class="mr-2" alt="">
@@ -181,8 +185,6 @@
         </footer>
 
     </div>
-
-
 
 </body>
 </html>
